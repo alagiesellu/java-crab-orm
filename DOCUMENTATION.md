@@ -4,10 +4,40 @@ record have to go through before adding a record to the database, the system can
 conventional application. So this Java API will provide an easier way to work with a **BigchainDB** database system 
 in an **Object Relational Mapping** manner.
 
-Records will be abstractly `created`, `read`, `updated` and `deleted` in a **BigchainDB**, as in conventional
-relational databases like MySQL. Tho the records will not be actually be `deleted` or `updated`. But this API should act as
+Records will be abstractly `created`, `read`, `updated` and `deleted` from a **BigchainDB**, as in conventional
+relational databases like MySQL. Tho the records will not be `deleted` or `updated` in the actual database. But this API should act as
 if they are.
 
+# Create Operation
+Creating a record will go through the following steps;
+1. **Validation:** Object will first be validated to match the requirement of the mapped model.
+2. **Sending Create Request to BigchainDB:** After the record meet the object model requirement. Then record will be send
+to a BigchainDB through it's API as a blockchain transactions.
+
+## Record Structure on The BigchainDB
+```json
+{
+    "asset": {
+        "columns_1": "1 Data....",
+        "columns_2": "2 Data....",
+        "columns_3": "3 Data...."
+    },
+    "metadata": {
+        "table_name": "db_table_name",
+        "_id": null,
+        "burned": null,
+        "timestamp": 243242344
+    }
+}
+```
+* `asset` will store records in database column format.
+* `metadata->table_name` will store the name of the ORM model of the record.
+* `metadata->_id` will store the id of the previous transaction of the same record. In the case of update operation,
+the `_id` filed will store the id of the previous state of the record. When a find query is made on a record,
+the program will make sure there is no other transaction on the BigchainDB database with `_id` linked to the queried record.
+
+* `metadata->`
+* `metadata->`
 # Project Structure
 
 ## Annotations
@@ -34,19 +64,8 @@ NoSQL MongoDB database, so such validation are not supported.
 Data will be stored in a transactions in the following format;
 
 
-```json
-{
-    "asset": {
-        "columns_1": "1 Data....",
-        "columns_2": "2 Data....",
-        "columns_3": "3 Data...."
-    },
-    "metadata": {
-        "table_name": "db_table_name",
-        "_id": null,
-        "burned": null,
-        "timestamp": 243242344
-    }
-}
-```
 
+
+# Useful Resources
+
+* [BigchainDB Documentatioin Website](https://docs.bigchaindb.com/en/latest/)

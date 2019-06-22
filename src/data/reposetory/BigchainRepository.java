@@ -13,7 +13,7 @@ public class BigchainRepository {
         this.type = type;
     
         if(!type.isAnnotationPresent(Entity.class)){
-            System.out.println("Entity Annotation not found in " + type.getName());
+            System.out.println("Entity Annotation not found in " + type.getName);
         }
         
         System.out.println(getTableName());
