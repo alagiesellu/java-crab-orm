@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="19666d43-fca7-4460-98d5-2176514383e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/DOCUMENTATION.md" beforeDir="false" afterPath="$PROJECT_DIR$/DOCUMENTATION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/reposetory/BigchainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/reposetory/BigchainRepository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,8 +80,8 @@
         <entry file="file://$PROJECT_DIR$/DOCUMENTATION.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="350">
-                <caret line="35" column="122" selection-start-line="35" selection-start-column="122" selection-end-line="35" selection-end-column="122" />
+              <first_editor relative-caret-position="440">
+                <caret line="89" column="61" lean-forward="true" selection-start-line="89" selection-start-column="61" selection-end-line="89" selection-end-column="61" />
               </first_editor>
               <second_editor />
             </state>
@@ -258,7 +257,7 @@
       <workItem from="1560959771051" duration="48000" />
       <workItem from="1560959886466" duration="7569000" />
       <workItem from="1561020823118" duration="3287000" />
-      <workItem from="1561206660657" duration="1713000" />
+      <workItem from="1561206660657" duration="3886000" />
     </task>
     <task id="LOCAL-00001" summary="Constructing Annotations">
       <created>1561021075304</created>
@@ -278,7 +277,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23594000" />
+    <option name="totallyTimeSpent" value="25767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="26" width="1606" height="877" extended-state="6" />
@@ -467,8 +466,8 @@
     <entry file="file://$PROJECT_DIR$/DOCUMENTATION.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="350">
-            <caret line="35" column="122" selection-start-line="35" selection-start-column="122" selection-end-line="35" selection-end-column="122" />
+          <first_editor relative-caret-position="440">
+            <caret line="89" column="61" lean-forward="true" selection-start-line="89" selection-start-column="61" selection-end-line="89" selection-end-column="61" />
           </first_editor>
           <second_editor />
         </state>
