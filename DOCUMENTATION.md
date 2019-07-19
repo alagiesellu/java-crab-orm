@@ -92,7 +92,7 @@ NoSQL MongoDB database, so such validation are not supported.
 # Terminology
 * **Transaction:**
 In BigchainDB, transactions are used to register, issue, create or transfer things (e.g. assets).
-Transactions are the most basic kind of record stored by BigchainDB. [GitHub - BigchainDB Enhancement Proposals][2]
+Transactions are the most basic kind of record stored by BigchainDB. [GitHub][2]
 
 [1]: https://docs.bigchaindb.com/en/latest/     "BigchainDB Documentatioin Website"
 [2]: https://github.com/bigchaindb/BEPs/tree/master/13  "GitHub - BigchainDB Enhancement Proposals"
