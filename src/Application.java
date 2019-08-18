@@ -1,4 +1,4 @@
-import data.reposetory.BigchainRepository;
+import data.repository.BigchainRepository;
 
 public class Application {
     

@@ -82,6 +82,15 @@ really deleted from the database. The metadata->burned key will be set true and 
 But still the metadata->prev_id will be pointed to the previous state of the record. In case a read on that state of the
 record is made, it could be detected that this record is burned.
 
+## Use Case
+BlockchainDB provides the possibilities of immutable database records. This project will provide easy update and delete in the form
+of Append and Burn of records but still keeping previous states of the records.
+
+This will be useful in situation like National Identification Registration Systems. Where records updates and deletion are rear and
+only occur in special cases. This system could also still keep previous records which could be useful or required in possible
+administrative auditing or investigation. And also prevent corrupt practices like modification of sensitive records like birth
+registration and identification records.
+
 [1]: https://dl.acm.org/citation.cfm?id=1376773     "Object/relational mapping 2008: hibernate and the entity data model (edm)"
 [2]: https://docs.bigchaindb.com/en/latest      "BigchainDB Documentation"
 [3]: https://docs.bigchaindb.com/en/latest/immutable.html       "How BigchainDB is Immutable"

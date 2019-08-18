@@ -1,4 +1,4 @@
-package data.reposetory;
+package data.repository;
 
 import data.annotations.Entity;
 
