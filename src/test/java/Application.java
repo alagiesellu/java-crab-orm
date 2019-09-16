@@ -6,9 +6,9 @@ public class Application {
         BigchainRepository<Person> repository = new BigchainRepository<Person>(Person.class);
         
         Person p = new Person();
-        p.id = 1;
-        p.name = "Muhammed S. Baldeh";
-        p.age = 20;
-        repository.create(p);
+        p.id = 10;
+//        p.name = "Muhammed S. Baldeh";
+//        p.age = 20;
+        repository.find(p);
     }
 }

@@ -8,12 +8,37 @@
     <artifactId>java.crab.orm</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.1.RELEASE</version>
+    </parent>
+
     <dependencies>
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20180130</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.bigchaindb/bigchaindb-driver -->
+        <dependency>
+            <groupId>com.bigchaindb</groupId>
+            <artifactId>bigchaindb-driver</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
